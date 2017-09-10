@@ -21,6 +21,12 @@ trait Searchable
     public $isDocument = false;
 
     /**
+     * Highlight search result
+     *
+     * @var null|array
+     */
+    public $highlight = null;
+    /**
      * Hit score after querying Elasticsearch.
      *
      * @var null|int
