@@ -718,9 +718,7 @@ class SearchBuilder
             'body'  => $this->toDSL(),
         ];
         if(count($dsl) > 0){
-            $params = [
-                'body'  => $dsl,
-            ];
+            $params['body'] = $dsl;
         }
         return $this->connection->searchStatement($params);
     }
